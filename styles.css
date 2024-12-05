@@ -1,0 +1,109 @@
+/* General Body Styling */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.container {
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    gap: 5px;
+    width: 80%;
+    height: 60%;
+    background-size: cover;
+    background-position: center;
+}
+
+/* Game-specific background images */
+body.game1 .container {
+    background-image: url('./images/game1.webp');
+}
+
+body.game2 .container {
+    background-image: url('./images/game2.webp');
+}
+
+body.game3 .container {
+    background-image: url('./images/game3.webp');
+}
+
+body.game4 .container {
+    background-image: url('./images/game4.webp');
+}
+
+body.game5 .container {
+    background-image: url('./images/game5.webp');
+}
+
+/* Box Styling */
+.box {
+    background-color: #007bff;
+    border: 2px solid #0056b3;
+    transition: transform 0.5s, opacity 0.5s;
+    position: relative;
+    z-index: 1;
+}
+
+.box.removed {
+    transform: rotateY(180deg);
+    opacity: 0;
+    pointer-events: none;
+}
+
+/* Buttons */
+.button-container {
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+    display: flex;
+    gap: 10px;
+}
+
+.spin-button {
+    padding: 10px 20px;
+    font-size: 16px;
+    color: white;
+    text-decoration: none;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    display: inline-block;
+    text-align: center;
+}
+
+/* Green Button */
+.spin-button.green {
+    background-color: #28a745;
+}
+
+.spin-button.green:hover {
+    background-color: #218838;
+}
+
+/* Red Button */
+.spin-button.red {
+    background-color: #dc3545;
+}
+
+.spin-button.red:hover {
+    background-color: #c82333;
+}
+
+/* Blue Buttons for Game Links */
+.spin-button.blue {
+    background-color: #007bff;
+}
+
+.spin-button.blue:hover {
+    background-color: #0056b3;
+}
