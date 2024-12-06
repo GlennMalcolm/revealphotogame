@@ -3,9 +3,10 @@ body {
     margin: 0;
     font-family: 'Comic Sans MS', cursive, sans-serif;
     background-color: #f8f9fa;
-    background-image: url('https://cdn.pixabay.com/photo/2013/07/13/11/44/snow-158730_1280.png'); /* Snowy background */
-    background-size: cover;
-    background-attachment: fixed;
+    background-image: url('./images/RevealphotogameBG.jpg'); /* New background image */
+    background-size: cover; /* Ensures the image covers the entire screen */
+    background-attachment: fixed; /* Keeps the background static while scrolling */
+    background-position: center; /* Center the image */
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -28,7 +29,7 @@ body {
     border-radius: 10px;
     box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
     background-repeat: no-repeat; /* Prevent image tiling */
-    background-size: contain; /* Entire image fits without cropping */
+    background-size: contain; /* Ensure the entire image fits */
     background-position: center; /* Center horizontally and vertically */
 }
 
