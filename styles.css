@@ -3,7 +3,7 @@ body {
     margin: 0;
     font-family: 'Comic Sans MS', cursive, sans-serif;
     background-color: #f8f9fa;
-    background-image: url('/images/RevealphotogameBG.jpg'); /* New background image */
+    background-image: url('./images/RevealphotogameBG.jpg'); /* New background image */
     background-size: cover; /* Ensures the image covers the entire screen */
     background-attachment: fixed; /* Keeps the background static while scrolling */
     background-position: center; /* Center the image */
