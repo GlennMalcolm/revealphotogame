@@ -28,8 +28,8 @@ body {
     border-radius: 10px;
     box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
     background-repeat: no-repeat; /* Prevent image tiling */
-    background-size: contain; /* Ensure the entire image fits */
-    background-position: center; /* Center the image */
+    background-size: contain; /* Entire image fits without cropping */
+    background-position: center; /* Center horizontally and vertically */
 }
 
 /* Styling Each Box */
