@@ -27,6 +27,9 @@ body {
     border: 5px solid #d4af37; /* Gold border */
     border-radius: 10px;
     box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+    background-repeat: no-repeat; /* Prevent image tiling */
+    background-size: contain; /* Ensure the entire image fits */
+    background-position: center; /* Center the image */
 }
 
 /* Styling Each Box */
@@ -106,21 +109,21 @@ body {
 
 /* Game-Specific Backgrounds */
 body.game1 .container {
-    background-image: url('./images/game1.webp');
+    background-image: url('./images/game1.webp'); /* Path to Game 1 image */
 }
 
 body.game2 .container {
-    background-image: url('./images/game2.webp');
+    background-image: url('./images/game2.webp'); /* Path to Game 2 image */
 }
 
 body.game3 .container {
-    background-image: url('./images/game3.webp');
+    background-image: url('./images/game3.webp'); /* Path to Game 3 image */
 }
 
 body.game4 .container {
-    background-image: url('./images/game4.webp');
+    background-image: url('./images/game4.webp'); /* Path to Game 4 image */
 }
 
 body.game5 .container {
-    background-image: url('./images/game5.webp');
+    background-image: url('./images/game5.webp'); /* Path to Game 5 image */
 }
