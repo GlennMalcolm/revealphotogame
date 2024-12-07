@@ -19,11 +19,11 @@ body {
 .container {
     position: relative;
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: repeat(3, 1fr);
-    gap: 5px;
-    width: 80%;
-    height: 60%;
+    grid-template-columns: repeat(4, 1fr); /* 4 columns */
+    grid-template-rows: repeat(3, 1fr); /* 3 rows */
+    gap: 5px; /* Small gap between boxes */
+    width: 80%; /* Set container width */
+    height: 45%; /* Maintain 16:9 aspect ratio */
     background-color: rgba(255, 255, 255, 0.8); /* Frosted glass effect */
     border: 5px solid #d4af37; /* Gold border */
     border-radius: 10px;
@@ -31,17 +31,19 @@ body {
     background-repeat: no-repeat; /* Prevent image tiling */
     background-size: contain; /* Ensure the entire image fits */
     background-position: center; /* Center horizontally and vertically */
+    overflow: hidden;
 }
 
 /* Styling Each Box */
 .box {
-    background-color: #ff4b4b; /* Bright red */
+    background-color: #ff4b4b; /* Bright red to hide image */
     border: 2px solid #28a745; /* Green border */
     transition: transform 0.5s, opacity 0.5s;
     position: relative;
     z-index: 1;
-    border-radius: 5px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    border-radius: 5px; /* Slightly rounded corners */
+    width: 100%; /* Stretch to fit grid cell */
+    height: 100%; /* Stretch to fit grid cell */
 }
 
 .box.removed {
