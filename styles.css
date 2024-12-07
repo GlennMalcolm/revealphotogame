@@ -112,7 +112,7 @@ body {
 
 /* Game-Specific Backgrounds */
 body.game1 .container {
-    background-image: url('./images/game1.webp'); /* Path to Game 1 image */
+    background-image: url('./images/Keeping_on_Trying_Game1_BG.png'); /* Path to Game 1 image */
 }
 
 body.game2 .container {
