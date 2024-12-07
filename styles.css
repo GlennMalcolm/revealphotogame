@@ -116,7 +116,7 @@ body.game1 .container {
 }
 
 body.game2 .container {
-    background-image: url('./images/playing_with_what_I_know_Game2_BG.png'); /* Path to Game 2 image */
+    background-image: url('./images/playing_with_what_I_know_Game2_BG.pn'); /* Path to Game 2 image */
 }
 
 body.game3 .container {
