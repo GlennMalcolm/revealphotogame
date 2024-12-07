@@ -22,8 +22,8 @@ body {
     grid-template-columns: repeat(4, 1fr); /* 4 columns */
     grid-template-rows: repeat(3, 1fr); /* 3 rows */
     gap: 5px; /* Small gap between boxes */
-    width: 80%; /* Set container width */
-    height: 45%; /* Maintain 16:9 aspect ratio */
+    width: 80vw; /* Use viewport width to ensure proper scaling */
+    height: calc(80vw * 9 / 16); /* Maintain 16:9 aspect ratio */
     background-color: rgba(255, 255, 255, 0.8); /* Frosted glass effect */
     border: 5px solid #d4af37; /* Gold border */
     border-radius: 10px;
